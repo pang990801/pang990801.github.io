@@ -1,0 +1,152 @@
+*,
+ul,
+li,
+p,
+div,
+span {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Microsoft Himalaya";
+}
+ul {
+  list-style: none;
+}
+* {
+  box-sizing: border-box;
+}
+.inner {
+  height: 100%;
+}
+.index_nav ul li {
+  position: relative;
+  font-size: 20px;
+  color: #fff;
+  opacity: 0.8;
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px; 
+  line-height: 20px;
+  cursor: pointer;
+  text-shadow: 0 6px 8px #00225b;
+  text-decoration: none;
+}
+.index_nav ul{
+  display:flex;
+  flex-direction:row;
+  padding:0;
+  margin:0;
+}
+.index li{
+  float:left;
+  flex:1;
+  height:60px;
+}
+.index_nav ul li:hover {
+  opacity: 1;
+}
+.index_nav a{
+  display:flex;
+  flex-direction:row;
+  padding:0;
+  margin:0;
+  position: relative;
+  font-size: 20px;
+  color: #fff;
+  opacity: 0.8;
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px; 
+  line-height: 20px;
+  cursor: pointer;
+  text-shadow: 0 6px 8px #00225b;
+}
+@font-face {
+  font-family: datamsg;
+  src: url("../font/液晶数字.TTF");
+}
+li {
+  list-style: none;
+}
+@font-face {
+  font-family: electronicFont;
+  src: url(../font/DS-DIGIT.TTF);
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  /*  背景图定位 / 背景图尺寸  cover 完全铺满容器  contain 完整显示在容器内 */
+  background: url(../images/bg.png) no-repeat #000;
+  background-size: cover;
+  /* 行高是字体1.15倍 */
+  line-height: 1.15;
+}
+.showTime {
+  position: absolute;
+  top: 0;
+  right: 0.375rem;
+  line-height: 0.9375rem;
+  font-size: 0.25rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+.mainbox {
+   /* min-width: 1024px; 
+  max-width: 1920px; */
+  width: 1200px;
+  height: 1024px;
+  padding: 0.125rem 0.125rem 0;
+  display: flex;
+}
+.mainbox .column {
+  flex: 3;
+}
+.mainbox .column:nth-child(2) {
+  flex: 5;
+  margin: 0 0.125rem 0.1875rem;
+  overflow: hidden;
+}
+.wordcloud{
+  margin:0;
+  padding:0;
+  background-size: cover;
+}
+/*这部分不一定会用到，是index_tab的style */
+.tabs {
+  float: left;
+  width: 100%;
+  height: 24px;
+  background-color: rgba(20, 51, 104, 0.54);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+.tabs ul li {
+  float: left;
+  color: #d5d8df;
+  margin-left: 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.tabs ul li > div {
+  margin-right: 10px;
+  width: 12px;
+  height: 12px;
+  margin-top: 6px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  float: left;
+}
+.tabs ul li > div > div {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 2px;
+  background-repeat: no-repeat;
+}
+.tabs ul li > div .tabs_active .tabs ul li > p {
+  float: left;
+  line-height: 24px;
+}
