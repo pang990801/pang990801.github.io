@@ -802,9 +802,6 @@ option = {
                 borderColor: '#1f79ff',
                     borderWidth: 2
             },
-            controlStyle: {
-                show: false
-            },
             data: time
         },
         tooltip: {
